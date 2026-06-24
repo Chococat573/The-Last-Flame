@@ -1,0 +1,80 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://ashen_warden_frames"]
+
+[sub_resource type="PlaceholderTexture2D" id="Tex"]
+size = Vector2(48, 48)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": false,
+"name": &"charge",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": false,
+"name": &"death",
+"speed": 5.0
+}]

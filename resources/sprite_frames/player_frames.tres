@@ -1,0 +1,86 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://player_frames"]
+
+[sub_resource type="PlaceholderTexture2D" id="Tex"]
+size = Vector2(32, 48)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": true,
+"name": &"walk_side",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": false,
+"name": &"death",
+"speed": 6.0
+}]

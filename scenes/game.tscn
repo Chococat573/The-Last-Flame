@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://game"]
+
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="1_player"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="2_hud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/pause_menu.tscn" id="3_pause"]
+[ext_resource type="PackedScene" path="res://scenes/ui/upgrade_menu.tscn" id="4_upgrade"]
+[ext_resource type="PackedScene" path="res://scenes/ui/game_over_screen.tscn" id="5_gameover"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_player")]
+position = Vector2(320, 288)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2, 2)
+process_callback = 0
+
+[node name="HUD" parent="." instance=ExtResource("2_hud")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("3_pause")]
+
+[node name="UpgradeMenu" parent="." instance=ExtResource("4_upgrade")]
+
+[node name="GameOverScreen" parent="." instance=ExtResource("5_gameover")]

@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://upgrade_card"]
+
+[ext_resource type="Script" path="res://scripts/ui/UpgradeCard.gd" id="1_card"]
+
+[node name="UpgradeCard" type="PanelContainer"]
+script = ExtResource("1_card")
+custom_minimum_size = Vector2(160, 200)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+
+[node name="Icon" type="TextureRect" parent="VBoxContainer"]
+unique_name_in_owner = true
+name = "Icon"
+custom_minimum_size = Vector2(64, 64)
+expand_mode = 1
+
+[node name="NameLabel" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+name = "NameLabel"
+text = "Upgrade"
+horizontal_alignment = 1
+
+[node name="DescriptionLabel" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+name = "DescriptionLabel"
+text = "Description"
+autowrap_mode = 3
+
+[node name="SelectButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+name = "SelectButton"
+text = "Choose"

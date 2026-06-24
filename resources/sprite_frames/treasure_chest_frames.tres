@@ -1,0 +1,26 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://treasure_chest_frames"]
+
+[sub_resource type="PlaceholderTexture2D" id="Tex"]
+size = Vector2(32, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": false,
+"name": &"open",
+"speed": 8.0
+}]
