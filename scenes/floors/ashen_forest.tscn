@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://ashen_forest"]
+
+[ext_resource type="Script" path="res://scripts/rooms/FloorManager.gd" id="1_floor"]
+[ext_resource type="Script" path="res://scripts/rooms/hazards/RainHazard.gd" id="2_rain"]
+
+[node name="AshenForest" type="Node2D"]
+script = ExtResource("1_floor")
+floor_index = 0
+
+[node name="RoomGenerator" type="Node2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="RoomGenerator"]
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Treasures" type="Node2D" parent="."]
+
+[node name="RainHazard" type="Node2D" parent="."]
+script = ExtResource("2_rain")
+
+[node name="RainParticles" type="GPUParticles2D" parent="RainHazard"]
+emitting = false
+amount = 200

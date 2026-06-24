@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://flame_pickup"]
+
+[ext_resource type="Script" path="res://scripts/interactables/FlamePickup.gd" id="1_pickup"]
+[ext_resource type="SpriteFrames" path="res://resources/sprite_frames/flame_pickup_frames.tres" id="2_frames"]
+
+[node name="FlamePickup" type="Area2D"]
+script = ExtResource("1_pickup")
+collision_layer = 8
+collision_mask = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_frames")
+autoplay = "float"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+texture_scale = 0.5
+color = Color(1, 0.6, 0.1, 1)

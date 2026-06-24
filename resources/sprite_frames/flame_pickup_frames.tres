@@ -1,0 +1,24 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://flame_pickup_frames"]
+
+[sub_resource type="PlaceholderTexture2D" id="Tex"]
+size = Vector2(16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": true,
+"name": &"float",
+"speed": 6.0
+}]

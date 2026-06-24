@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/UpgradeResource.gd" id="1_upgrade"]
+
+[resource]
+script = ExtResource("1_upgrade")
+upgrade_name = "Far-Reaching Flame"
+description = "The flame's light radius grows by 40 units."
+upgrade_type = "vision_radius"
+value = 40.0
+stackable = true
+rarity = 1

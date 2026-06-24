@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://player"]
+
+[ext_resource type="Script" path="res://scripts/player/Player.gd" id="1_player"]
+[ext_resource type="Script" path="res://scripts/player/PlayerHealth.gd" id="2_health"]
+[ext_resource type="Script" path="res://scripts/player/FlameSystem.gd" id="3_flame"]
+[ext_resource type="Script" path="res://scripts/player/PlayerCombat.gd" id="4_combat"]
+[ext_resource type="SpriteFrames" path="res://resources/sprite_frames/player_frames.tres" id="5_frames"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_player")
+collision_layer = 1
+collision_mask = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("5_frames")
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="PlayerHealth" type="Node" parent="."]
+script = ExtResource("2_health")
+
+[node name="FlameSystem" type="Node" parent="."]
+script = ExtResource("3_flame")
+
+[node name="PointLight2D" type="PointLight2D" parent="FlameSystem"]
+texture_scale = 1.8
+color = Color(1, 0.9, 0.6, 1)
+energy = 1.5
+
+[node name="PlayerCombat" type="Node" parent="."]
+script = ExtResource("4_combat")
+
+[node name="AttackArea" type="Area2D" parent="PlayerCombat"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="AttackAreaShape" type="CollisionShape2D" parent="PlayerCombat/AttackArea"]
+
+[node name="ProjectileSpawn" type="Marker2D" parent="PlayerCombat"]
+position = Vector2(16, 0)
+
+[node name="InteractionArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8

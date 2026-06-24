@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://flame_proj_frames"]
+
+[sub_resource type="PlaceholderTexture2D" id="Tex"]
+size = Vector2(8, 8)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("Tex")
+}, {
+"duration": 1.0,
+"texture": SubResource("Tex")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]

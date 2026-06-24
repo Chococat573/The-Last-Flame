@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeResource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/resources/UpgradeResource.gd" id="1_upgrade"]
+
+[resource]
+script = ExtResource("1_upgrade")
+upgrade_name = "Slow Burn"
+description = "Reduce the flame's decay rate by 1 per second."
+upgrade_type = "flame_decay_reduction"
+value = 1.0
+stackable = true
+rarity = 2
